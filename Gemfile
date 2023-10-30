@@ -47,6 +47,7 @@ group :development, :test do
   gem "shoulda-matchers"
   gem "orderly"
   gem "graphql"
+  gem 'aws-sdk-rails'
 end
 
 group :development do
