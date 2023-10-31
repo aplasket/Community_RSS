@@ -48,6 +48,7 @@ group :development, :test do
   gem "orderly"
   gem "graphql"
   gem 'aws-sdk-rails'
+
 end
 
 group :development do
@@ -55,3 +56,8 @@ group :development do
   # gem "spring"
 end
 
+gem 'figaro'
+gem 'jsonapi-serializer'
+gem 'faraday'
+gem 'webmock'
+gem 'vcr'
