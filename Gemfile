@@ -46,12 +46,12 @@ group :development, :test do
   gem "simplecov"
   gem "shoulda-matchers"
   gem "orderly"
-  gem "graphql"
   gem 'aws-sdk-rails'
-
+  
 end
 
 group :development do
+  gem 'graphiql-rails'
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
 end
