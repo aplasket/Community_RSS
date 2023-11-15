@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+require 'types/mutation_type'
 
 class CommunityRssSchema < GraphQL::Schema
   mutation(Types::MutationType)

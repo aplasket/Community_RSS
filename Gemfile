@@ -40,7 +40,7 @@ gem 'jsonapi-serializer'
 gem 'faraday'
 gem 'webmock'
 gem 'vcr'
-# gem 'honeybadger'
+# gem 'honeybadger' use this for error reporting?
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
