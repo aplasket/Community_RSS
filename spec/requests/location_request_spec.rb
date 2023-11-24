@@ -5,13 +5,13 @@ RSpec.describe 'Location Request API' do
     it 'get successful response' do
       query = <<-GQL
         mutation {
-          zip_code(
+          find_community(
             zip_code: "80226"
           )
         }
       GQL
       result = CommunityRssSchema.execute(query)
-      # require 'pry'; binding.pry
+      require 'pry'; binding.pry
       expect(result.to_h).to be_a Hash
     end
 
@@ -37,7 +37,7 @@ RSpec.describe 'Location Request API' do
         }
       GQL
       result = CommunityRssSchema.execute(query)
-      # expect
+      expect(result[:data]).to eq nil
     end
 
     # def zip_query
