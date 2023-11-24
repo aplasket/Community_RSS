@@ -8,5 +8,9 @@ module Types
     def test_field
       "Hello World"
     end
+
+    # def zip_code
+
+    # end
   end
 end
