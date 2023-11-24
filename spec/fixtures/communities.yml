@@ -1,0 +1,5 @@
+test: 
+  name: "Lakewood"
+  county: "Jefferson"
+  state: "Colorado"
+  zip_code: 80226

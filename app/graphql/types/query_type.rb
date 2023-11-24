@@ -2,6 +2,18 @@
 
 module Types
   class QueryType < Types::BaseObject
+    include GraphQL::Types::Relay::HasNodeField
+    include GraphQL::Types::Relay::HasNodesField
+
+    field :communities, 
+    [Types::CommunityType],
+    null: false, 
+    description: "Return a list of communities"
+
+    def communities
+      Community.all
+    end 
+    
     field :node, Types::NodeType, null: true, description: "Fetches an object given its ID." do
       argument :id, ID, required: true, description: "ID of the object."
     end
