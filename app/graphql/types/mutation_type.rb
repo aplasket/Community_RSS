@@ -1,12 +1,9 @@
 # frozen_string_literal: true
 
 module Types
-  class MutationType < GraphQL::Types::BaseObject
-    # TODO: remove me
-    field :test_field, String, null: false,
-      description: "An example field added by the generator"
-    def test_field
-      "Hello World"
+  class MutationType < Types::BaseObject
+    field :find_community, mutation: Mutations::FindCommunity do
+      argument :zip_code, String, required: true
     end
   end
 end
