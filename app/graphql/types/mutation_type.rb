@@ -2,8 +2,6 @@
 
 module Types
   class MutationType < Types::BaseObject
-    field :find_community, mutation: Mutations::FindCommunity do
-      argument :zip_code, String, required: true
-    end
+    field :find_community, mutation: Mutations::FindCommunity
   end
 end
